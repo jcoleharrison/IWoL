@@ -19,6 +19,11 @@
    cd ~/
    git clone https://github.com/metadriverse/metadrive.git
    cd metadrive
+   ```
+   IMPORTANT: To avoid dependency conflicts at this stage, in `setup.py` in the metadrive folder, 
+   update the requirements for `python_version >= '3.8'` with `numpy==1.22.4`.
+   Then complete the editable installation:
+   ```
    pip install -e .
    ```
 
