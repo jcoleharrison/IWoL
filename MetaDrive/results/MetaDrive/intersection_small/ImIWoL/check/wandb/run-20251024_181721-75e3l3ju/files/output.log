@@ -1,0 +1,45 @@
+[38m[INFO] Environment: MultiAgentIntersectionSmallEnv
+[38m[INFO] MetaDrive version: 0.4.3
+[38m[INFO] Sensors: [lidar: Lidar(), side_detector: SideDetector(), lane_line_detector: LaneLineDetector()]
+[38m[INFO] Render Mode: none
+[38m[INFO] Horizon (Max steps per agent): 1000
+[33m[WARNING] When reaching max steps, both 'terminate' and 'truncate will be True.Generally, only the `truncate` should be `True`. (base_env.py:395)
+[38m[INFO] Assets version: 0.4.3
+[38m[INFO] Known Pipes: glxGraphicsPipe
+[38m[INFO] Start Scenario Index: 0, Num Scenarios : 1
+[33m[WARNING] env.vehicles will be deprecated soon. Use env.agents instead (base_env.py:735)
+Traceback (most recent call last):
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/scripts/train_metadrive_scripts/../train/train_ImIWoL.py", line 168, in main
+    runner.run()
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/runner/shared/ImIWoL_runner.py", line 27, in run
+    self.warmup()
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/runner/shared/ImIWoL_runner.py", line 87, in warmup
+    obs = self.envs.reset()
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/envs/env_wrappers.py", line 271, in reset
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/envs/env_wrappers.py", line 271, in <listcomp>
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/scripts/train_metadrive_scripts/../train/train_ImIWoL.py", line 183, in <module>
+    main(sys.argv[1:])
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/scripts/train_metadrive_scripts/../train/train_ImIWoL.py", line 171, in main
+    envs.close()
+  File "/home/cole/repos/IWoL/MetaDrive/onpolicy/envs/env_wrappers.py", line 287, in close
+    remote.send(('close', None))
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/cole/miniconda3/envs/MetaDrive_IWoL/lib/python3.9/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+x range 83.30000000000001
+y range 83.3

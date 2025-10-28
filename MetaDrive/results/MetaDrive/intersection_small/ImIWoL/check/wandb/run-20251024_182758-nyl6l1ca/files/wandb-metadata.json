@@ -1,0 +1,215 @@
+{
+    "os": "Linux-6.14.0-33-generic-x86_64-with-glibc2.39",
+    "python": "3.9.18",
+    "heartbeatAt": "2025-10-24T23:27:58.495201",
+    "startedAt": "2025-10-24T23:27:58.117618",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--env_name",
+        "MetaDrive",
+        "--algorithm_name",
+        "ImIWoL",
+        "--scenario_name",
+        "intersection_small",
+        "--num_agents",
+        "8",
+        "--seed",
+        "1",
+        "--episode_length",
+        "1000",
+        "--n_training_threads",
+        "1",
+        "--n_rollout_threads",
+        "16",
+        "--num_mini_batch",
+        "1",
+        "--num_env_steps",
+        "10000000",
+        "--ppo_epoch",
+        "15",
+        "--log_interval",
+        "10",
+        "--use_eval",
+        "--eval_interval",
+        "50",
+        "--n_eval_rollout_threads",
+        "1",
+        "--lr",
+        "3e-4",
+        "--critic_lr",
+        "3e-4",
+        "--hidden_size",
+        "256",
+        "--meta_lidar_num_lasers",
+        "2",
+        "--meta_lidar_dist",
+        "10",
+        "--meta_lidar_num_others",
+        "4",
+        "--meta_reward_coeff",
+        "1",
+        "--meta_global_pos",
+        "--meta_navi_pos",
+        "--meta_comm_range",
+        "100",
+        "--meta_comm_max_num",
+        "4",
+        "--use_centralized_V",
+        "--comm_type",
+        "1",
+        "--num_comm_hops",
+        "4",
+        "--comm_hidden_size",
+        "256",
+        "--comm_num_heads",
+        "4",
+        "--pos_embed",
+        "--obs_pos_embed_start",
+        "20",
+        "--obs_pos_embed_end",
+        "22",
+        "--obs_info_scheduler",
+        "rnn_enc",
+        "--skip_connect_final",
+        "--fixed_masked",
+        "--mask_threshold",
+        "0.5",
+        "--use_scheduler",
+        "--n_obs_head",
+        "1",
+        "--obs_enc_type",
+        "rnn",
+        "--code_size",
+        "256",
+        "--world_dynamics_coef",
+        "0.05",
+        "--interactive_coef",
+        "0.05",
+        "--latent_size",
+        "8",
+        "--wandb_project_name",
+        "test",
+        "--user_name",
+        "user_name"
+    ],
+    "state": "running",
+    "program": "/home/cole/repos/IWoL/MetaDrive/onpolicy/scripts/train_metadrive_scripts/../train/train_ImIWoL.py",
+    "codePathLocal": null,
+    "codePath": "MetaDrive/onpolicy/scripts/train/train_ImIWoL.py",
+    "git": {
+        "remote": "https://github.com/jcoleharrison/IWoL.git",
+        "commit": "531ef8fd4c6491ab83bde549bbd444039c7fb894"
+    },
+    "email": "j.cole.harrison@me.com",
+    "root": "/home/cole/repos/IWoL",
+    "host": "cole-ubuntu",
+    "username": "cole",
+    "executable": "/home/cole/miniconda3/envs/MetaDrive_IWoL/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3402.9719999999998,
+        "min": 1754.0,
+        "max": 4853.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4605.38,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3877.309,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3863.412,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3874.166,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3879.378,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3879.238,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 4849.891,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3895.786,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3871.628,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 3861.134,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        },
+        {
+            "current": 1754.0,
+            "min": 1754.0,
+            "max": 4853.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 191.18775939941406,
+            "used": 176.97405242919922
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10737418240
+        }
+    ],
+    "memory": {
+        "total": 125.72172164916992
+    }
+}

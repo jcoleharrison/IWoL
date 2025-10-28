@@ -1,0 +1,395 @@
+wandb_version: 1
+
+user_name:
+  desc: null
+  value: user_name
+use_wandb:
+  desc: null
+  value: true
+wandb_project_name:
+  desc: null
+  value: test
+wandb_group:
+  desc: null
+  value: Debug
+algorithm_name:
+  desc: null
+  value: ImIWoL
+experiment_name:
+  desc: null
+  value: check
+seed:
+  desc: null
+  value: 0
+cuda:
+  desc: null
+  value: true
+cuda_deterministic:
+  desc: null
+  value: true
+env_name:
+  desc: null
+  value: MetaDrive
+use_obs_instead_of_state:
+  desc: null
+  value: false
+n_training_threads:
+  desc: null
+  value: 1
+n_rollout_threads:
+  desc: null
+  value: 16
+n_eval_rollout_threads:
+  desc: null
+  value: 1
+n_render_rollout_threads:
+  desc: null
+  value: 1
+num_env_steps:
+  desc: null
+  value: 10000000
+episode_length:
+  desc: null
+  value: 1000
+share_policy:
+  desc: null
+  value: true
+use_centralized_V:
+  desc: null
+  value: false
+stacked_frames:
+  desc: null
+  value: 1
+use_stacked_frames:
+  desc: null
+  value: false
+hidden_size:
+  desc: null
+  value: 256
+layer_N:
+  desc: null
+  value: 1
+use_ReLU:
+  desc: null
+  value: true
+use_popart:
+  desc: null
+  value: false
+use_valuenorm:
+  desc: null
+  value: true
+use_feature_normalization:
+  desc: null
+  value: true
+use_orthogonal:
+  desc: null
+  value: true
+gain:
+  desc: null
+  value: 0.01
+use_naive_recurrent_policy:
+  desc: null
+  value: false
+use_recurrent_policy:
+  desc: null
+  value: true
+recurrent_N:
+  desc: null
+  value: 1
+data_chunk_length:
+  desc: null
+  value: 10
+lr:
+  desc: null
+  value: 0.0003
+critic_lr:
+  desc: null
+  value: 0.0003
+opti_eps:
+  desc: null
+  value: 1.0e-05
+weight_decay:
+  desc: null
+  value: 0
+ppo_epoch:
+  desc: null
+  value: 15
+use_clipped_value_loss:
+  desc: null
+  value: true
+clip_param:
+  desc: null
+  value: 0.2
+num_mini_batch:
+  desc: null
+  value: 1
+entropy_coef:
+  desc: null
+  value: 0.01
+value_loss_coef:
+  desc: null
+  value: 1
+use_max_grad_norm:
+  desc: null
+  value: true
+max_grad_norm:
+  desc: null
+  value: 10.0
+use_gae:
+  desc: null
+  value: true
+gamma:
+  desc: null
+  value: 0.99
+gae_lambda:
+  desc: null
+  value: 0.95
+use_proper_time_limits:
+  desc: null
+  value: false
+use_huber_loss:
+  desc: null
+  value: true
+use_value_active_masks:
+  desc: null
+  value: true
+use_policy_active_masks:
+  desc: null
+  value: true
+huber_delta:
+  desc: null
+  value: 10.0
+use_linear_lr_decay:
+  desc: null
+  value: false
+save_interval:
+  desc: null
+  value: 1
+log_interval:
+  desc: null
+  value: 10
+use_eval:
+  desc: null
+  value: true
+eval_interval:
+  desc: null
+  value: 50
+eval_episodes:
+  desc: null
+  value: 32
+save_gifs:
+  desc: null
+  value: false
+use_render:
+  desc: null
+  value: false
+render_episodes:
+  desc: null
+  value: 5
+ifi:
+  desc: null
+  value: 0.1
+gat_hidden_size:
+  desc: null
+  value: 64
+gat_num_heads:
+  desc: null
+  value: 4
+max_comm_graph_batch_size:
+  desc: null
+  value: 100
+use_scheduler:
+  desc: null
+  value: true
+negative_slope:
+  desc: null
+  value: 1.2
+scheduler_head:
+  desc: null
+  value: 1
+comm_hidden_size:
+  desc: null
+  value: 256
+comm_num_heads:
+  desc: null
+  value: 4
+num_comm_hops:
+  desc: null
+  value: 4
+comm_type:
+  desc: null
+  value: 1
+model_dir:
+  desc: null
+  value: null
+encode_state:
+  desc: null
+  value: false
+n_block:
+  desc: null
+  value: 1
+n_embd:
+  desc: null
+  value: 64
+n_head:
+  desc: null
+  value: 1
+dec_actor:
+  desc: null
+  value: false
+share_actor:
+  desc: null
+  value: false
+pos_embed:
+  desc: null
+  value: true
+obs_pos_embed_start:
+  desc: null
+  value: 20
+obs_pos_embed_end:
+  desc: null
+  value: 22
+n_obs_head:
+  desc: null
+  value: 1
+obs_enc_type:
+  desc: null
+  value: rnn
+obs_info_scheduler:
+  desc: null
+  value: rnn_enc
+skip_connect_final:
+  desc: null
+  value: true
+causal_masked:
+  desc: null
+  value: false
+fixed_masked:
+  desc: null
+  value: false
+mask_threshold:
+  desc: null
+  value: 0.5
+use_vq_vae:
+  desc: null
+  value: false
+code_size:
+  desc: null
+  value: 256
+vq_temp:
+  desc: null
+  value: 0.25
+eval_bit:
+  desc: null
+  value: 32
+noise_pct:
+  desc: null
+  value: 0.0
+latent_size:
+  desc: null
+  value: 8
+world_dynamics_coef:
+  desc: null
+  value: 0.05
+interactive_coef:
+  desc: null
+  value: 0.05
+prefix_name:
+  desc: null
+  value: mgdt
+sparsity:
+  desc: null
+  value: 0.4
+use_bilevel:
+  desc: null
+  value: false
+warmup:
+  desc: null
+  value: 10
+post_stable:
+  desc: null
+  value: false
+post_ratio:
+  desc: null
+  value: 0.5
+self_loop_add:
+  desc: null
+  value: true
+alg_seed:
+  desc: null
+  value: 1
+no_relation_enhanced:
+  desc: null
+  value: false
+scenario_name:
+  desc: null
+  value: intersection_small
+num_agents:
+  desc: null
+  value: 8
+use_render_metadrive:
+  desc: null
+  value: false
+meta_coop_reward:
+  desc: null
+  value: false
+meta_reward_coeff:
+  desc: null
+  value: 1.0
+meta_global_pos:
+  desc: null
+  value: true
+meta_lidar_num_lasers:
+  desc: null
+  value: 2
+meta_lidar_dist:
+  desc: null
+  value: 10.0
+meta_lidar_num_others:
+  desc: null
+  value: 4
+meta_lidar_pt_cloud:
+  desc: null
+  value: false
+meta_allow_respawn:
+  desc: null
+  value: false
+meta_navi_pos:
+  desc: null
+  value: true
+meta_comm_range:
+  desc: null
+  value: 100.0
+meta_comm_max_num:
+  desc: null
+  value: 4
+meta_disable_steering:
+  desc: null
+  value: false
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.18
+    cli_version: 0.15.12
+    framework: huggingface
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1761348467.052464
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 11
+      - 49
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.9.18
+      5: 0.15.12
+      8:
+      - 5
+      13: linux-x86_64
